@@ -43,19 +43,19 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             ViewBag.d14 = deger14;
             var deger15 = c.SatisHareket.Count(x=>x.Tarih==DateTime.Today).ToString();
             ViewBag.d15 = deger15;
-            if (Convert.ToInt32(deger15) != 0)
+            //if (Convert.ToInt32(deger15) != 0)
 
-            {
+            //{
 
-                var deger16 = c.SatisHareket.Where(x => x.Tarih == DateTime.Today).Sum(y => y.ToplamTutar).ToString();
+            //    var deger16 = c.SatisHareket.Where(x => x.Tarih == DateTime.Today).Sum(y => y.ToplamTutar).ToString();
 
-                ViewBag.d16 = deger16;
+            //    ViewBag.d16 = deger16;
 
-            }
+            //}
 
-            else { ViewBag.d16 = deger15; }
-            // var deger16 = c.SatisHareket.Where(x => x.Tarih == DateTime.Today).Sum(y => y.ToplamTutar).ToString();//
-           // ViewBag.d16 = deger15;
+            //else { ViewBag.d16 = deger15; }
+            var deger16 = c.SatisHareket.Where(x => x.Tarih == DateTime.Today).Sum(y => (decimal?)y.ToplamTutar).ToString();//
+            ViewBag.d16 = deger16;
             return View();
         }
         public ActionResult KolayTablolar()
