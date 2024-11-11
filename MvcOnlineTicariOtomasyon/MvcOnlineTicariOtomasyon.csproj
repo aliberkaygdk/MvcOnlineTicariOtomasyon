@@ -3075,6 +3075,7 @@
     <Content Include="Views\CariPanel\Partial1.cshtml" />
     <Content Include="Views\CariPanel\Partial2.cshtml" />
     <Content Include="Views\Error\PageError.cshtml" />
+    <Content Include="Views\Kategori\Deneme.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

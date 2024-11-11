@@ -8,6 +8,7 @@ using WebGrease.Activities;
 
 namespace MvcOnlineTicariOtomasyon.Controllers
 {
+    [Authorize]
     public class DepartmanController : Controller
     {
         // GET: Departman
