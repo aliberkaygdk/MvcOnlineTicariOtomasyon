@@ -8,7 +8,8 @@ using WebGrease.Activities;
 
 namespace MvcOnlineTicariOtomasyon.Controllers
 {
-    [Authorize]
+    //[Authorize]
+    [Authorize(Roles = "A")]
     public class DepartmanController : Controller
     {
         // GET: Departman
@@ -18,6 +19,7 @@ namespace MvcOnlineTicariOtomasyon.Controllers
             var degerler = c.Departman.Where(x=>x.Durum == true).ToList();
             return View(degerler);
         }
+        //[Authorize(Roles = "A")]
         [HttpGet]
         public ActionResult DepartmanEkle()
         {
