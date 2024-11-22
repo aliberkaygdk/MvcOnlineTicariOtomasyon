@@ -41,6 +41,7 @@
 • Widget Cards kullanımları
 
 # Ekran Çıktıları
+![dbss](https://github.com/user-attachments/assets/86f922b8-2673-42c0-b08b-b1de032c7d27)
 ![1](https://github.com/user-attachments/assets/e626dabb-81e9-4ca5-bfa4-498df179fe91)
 ![2](https://github.com/user-attachments/assets/4dc707d1-1c3c-4671-bc24-6d1f1a211775)
 ![4](https://github.com/user-attachments/assets/26e29cc9-8738-469c-90b4-4348e04c525d)
